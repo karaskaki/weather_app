@@ -40,7 +40,7 @@ export const fetchAirPollutionData = createAsyncThunk(
   async ({ latitude, longitude }, { rejectWithValue }) => {
     try {
       const response = await fetch(
-        `http://api.airvisual.com/v2/nearest_city?lat=${latitude}&lon=${longitude}&key=${airQualityApiKey}`
+        `https://api.airvisual.com/v2/nearest_city?lat=${latitude}&lon=${longitude}&key=${airQualityApiKey}`
       );
       const data = await response.json();
       return data;
