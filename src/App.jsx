@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchWeatherData, fetchAirPollutionData } from "./slice/weatherSlice";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/navbar";
 import { iconsData } from "./assets/icons/icons";
 
 const App = () => {
